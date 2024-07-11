@@ -1,0 +1,139 @@
+.mini-eternal-animation{ 
+    display: flex;
+    position: relative;
+  }
+   
+  @keyframes rotate360 {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes rotate {
+    from {
+      transform: rotate(360deg);
+    }
+    to {
+      transform: rotate(0deg);
+    }
+  }
+    
+  .mini-eternal-purple-blur{ 
+    top: 0%;  
+    left: -5%;
+    position: absolute;
+    width: 110%;
+    height: 90%;
+    border-radius: 50%;
+    border: 6px solid var(--eternal-purple) ;
+    filter: blur(5px);
+    animation: rotate360 5s linear 0ms infinite;
+  }
+    
+  .mini-eternal-purple{ 
+      /* transform: rotate(90deg); */
+    position: absolute;
+    top: 0%;  
+    left: 5%;
+    width: 70%;
+    height: 100%;
+    border-radius: 50%;
+    border: 6px solid var(--eternal-purple)  ;
+    /* filter: blur(5px); */
+    animation: rotate 5s linear 0ms infinite;
+  }
+    
+  .mini-eternal-pink-blur{ 
+    position: absolute;
+    top: -5%;  
+    left: -5%;
+    width: 80%;
+    height: 100%;
+    border-radius: 50%;
+    border: 6px solid var(--eternal-pink)  ;
+    filter: blur(5px);
+    animation: rotate360 5s linear 0ms infinite;
+  }
+    
+  .mini-eternal-pink{ 
+    position: absolute;
+    top: -5%;  
+    left: -5%;
+    width: 80%;
+    height: 80%;
+    border-radius: 50%;
+    transform: rotate(90deg);
+    border: 6px solid var(--eternal-pink) ;
+    /* filter: blur(5px); */
+    animation: rotate 5s linear 0ms infinite;
+  }
+    
+    
+  .mini-eternal-green-blur{ 
+    position: absolute;
+    top: 0;  
+    left: -5%;
+    width: 70%;
+    height: 100%;
+    border-radius: 50%;
+    border: 6px solid var(--eternal-kiwi) ;
+    filter: blur(5px);
+    animation: rotate 5s linear 0ms infinite;
+  }
+    
+  .mini-eternal-gree{ 
+      /* transform: rotate(90deg); */
+      /* top: 0px;  */
+    position: absolute;
+    top: 5%;  
+    left: -5%;
+    width: 110%;
+    height: 90%;
+    border-radius: 50%;
+    border: 6px solid var(--eternal-kiwi) ;
+    /* filter: blur(5px); */
+    animation: rotate360 5s linear 0ms infinite;
+  }
+    
+    
+  .mini-eternal-white-blur{ 
+    position: absolute;
+    top: 0%;  
+    left: -10%;
+    width: 100%;
+    height: 90%;
+    border-radius: 50%;
+    border: 6px solid var(--eternal-white) ;
+    filter: blur(5px);
+    animation: rotate360 5s linear 0ms infinite;
+  }
+    
+.mini-eternal-white{ 
+    position: absolute;
+    top: 0%;  
+    left: -10%;
+    width: 70%;
+    height: 100%;
+    border-radius: 50%;
+    opacity: 0.4;
+    transform: rotate(90deg);
+    border: 6px solid var(--eternal-white) ;
+    /* filter: blur(5px); */
+    animation: rotate 5s linear 0ms infinite;
+}
+
+@media (min-width: 1000px){ 
+    .mini-eternal-animation{ 
+        width: 52px;
+        height: 44px;
+    }
+}
+
+@media (max-width: 1000px){ 
+    .mini-eternal-animation{ 
+        width: 44px;
+        height: 40px;
+    }
+}

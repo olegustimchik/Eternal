@@ -1,0 +1,54 @@
+.header { 
+    position: relative; 
+    display: inline-flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    width: 100vw;
+    padding: 16px 16px 0px 16px;
+    align-items: center;
+    -webkit-box-align: center;
+}
+
+.menu:hover{ 
+ cursor: pointer;
+}
+
+.eternal-animation-container{ 
+    display: flex;
+    justify-content: left;
+    width: 30px;
+    height: 30px;
+    margin-right: 1rem;
+}
+
+.eternal-container { 
+    display: inline-flex;
+    position: relative;
+    padding: 1rem;
+    justify-content: center 
+}
+
+.eternal-container:hover{
+    cursor: pointer; 
+}
+
+.eternal-text-img{
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    margin-left: 2rem;
+}
+
+.eternal-text-img img{
+    height: 0.6rem;
+    width: 9.3rem;
+}
+
+
+.buttons { 
+    display: flex;
+    justify-content: start;
+    -webkit-box-align: center;
+    padding: auto;
+    padding-right: 32px;
+}

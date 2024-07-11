@@ -1,0 +1,34 @@
+.get-started { 
+    display: flex;
+    justify-content: center;
+    -webkit-box-align: center;
+    position: relative;
+}
+
+.get-started-button { 
+    padding-top: 4px;
+    font-family: Arquitecta;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 110%;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    transition: all 0.3s ease-in-out 0s;
+    border: none;
+    cursor: pointer;
+    color: var(--eternal-white);
+    background: linear-gradient(281.4deg, var(--eternal-pink) -2.34%, var(--eternal-purple) 114.41%);
+    border-radius: 120px;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    width: 185px;
+    height: 48px;
+}
+
+.get-started-button:hover { 
+    background: linear-gradient(281.4deg, var(--eternal-pink) -80%, var(--eternal-purple) 114.41%);
+
+}
