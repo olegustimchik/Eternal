@@ -6,7 +6,11 @@ function App() {
   return (
     <>
       <Header></Header>
-      <EternalLogo/>
+      <div style={ {
+        height: "400px", width: "400px", position: "absolute", top: "200px", left: "200px",
+      }}>
+        <EternalLogo></EternalLogo>
+      </div>
     </>
   );
 }

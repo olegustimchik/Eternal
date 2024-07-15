@@ -4,7 +4,9 @@
     justify-content: space-between;
     margin-bottom: 10px;
     width: 100vw;
-    padding: 16px 16px 0px 16px;
+    padding-top: 16px; 
+    padding-left: 16px; 
+    padding-right:  16px;
     align-items: center;
     -webkit-box-align: center;
 }
