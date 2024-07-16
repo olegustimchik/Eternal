@@ -1,0 +1,236 @@
+.under-images{ 
+    position: absolute;
+    bottom: 50%;
+    width: 100%;
+    height: 19%;
+    object-fit: contain;
+    max-width: 100%;
+    background: linear-gradient(rgba(17, 17, 21, 0) 0%, rgb(17, 17, 21) 100%);
+    z-index: 3;
+}
+
+.home-container{ 
+  width: 100%;
+  display: flex; 
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-container{ 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    -webkit-box-align: center;
+    align-items: center;
+    max-width: 682px;
+    width: 100%;
+}
+
+@media (min-width: 1000px){ 
+    .home-container{ 
+        margin-top: 141px;
+    }
+}
+
+@media (max-width: 1000px){ 
+    .home-container{ 
+        margin-top: 65px;
+    }
+}
+
+.ask-text{ 
+    font-family: "Arquitecta";
+    text-align: center;
+    font-weight: 700;
+    line-height: 130%;
+    letter-spacing: 0.4em;
+    text-transform: uppercase;
+    color: var(--eternal-white);
+    margin-bottom: 8px;
+}
+
+.text-after-ask{ 
+    font-family: "Avenir";
+    text-align: center;
+    font-weight: 400;
+    opacity: 70%;
+    letter-spacing: -0.01em;
+    height: 100%;
+}
+
+@media (min-width: 1000px){ 
+    .ask-text{ 
+        font-size: 32px;
+        line-height: 48px;
+        
+    }
+    .text-after-ask{ 
+        font-size: 18px;
+        line-height: 27px;
+    }
+}
+
+@media (max-width: 1000px){ 
+    .ask-text{ 
+        font-size: 16px;
+        line-height: 20.8px;
+    }
+
+    .text-after-ask{ 
+        font-size: 14px;
+        line-height: 21px;
+    }
+}
+
+.home-message-container{ 
+    display: flex;
+    flex-direction: column;
+    gap: 16px; 
+    width: 534px;
+    height: 266px;
+    justify-content: space-between;
+    padding: 0;
+    z-index: 2;
+}
+
+.home-message-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 120px;
+    background: linear-gradient(281.4deg, rgba(248, 45, 152, 0.3) -2.34%, rgba(88, 51, 239, 0.3) 114.41%);
+    border:none;
+    padding-top: 1px;
+    padding-left: 1px;
+    padding-bottom: 1px;
+    padding-right: 1px;
+    
+}
+
+.home-message-text-container{ 
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+    height: 78px;
+    border-radius: 120px;
+    padding: 8px 8px 8px 48px;
+    background: linear-gradient(90.83deg, #08081E 11.84%, #21050C 111.32%);
+}
+
+.home-message-text{ 
+    font-family:"Avenir";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    letter-spacing: -0.01em;
+    text-align: left;
+}
+
+.background-container{
+    position: relative;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    aspect-ratio: 16 / 9;
+    max-width: 1580px;
+    min-width: 570px;
+    width: 100%;
+    margin: 220px 30px 0px;
+    border: 0px;
+    z-index: 1;
+}
+
+.conversation{ 
+    position: absolute;
+    bottom: 22%;
+    left: 5%;
+    width: 100%;
+    height: 100%;
+    padding: 0px 0px 33.1%;
+    object-fit: contain;
+    max-width: 90%;
+    margin-right: -2.8%;
+}
+
+.conversation img{ 
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    max-width: 100%;
+    z-index: 1;
+}
+
+.home-page-back-image{ 
+    position: absolute;
+    bottom: 50%;
+    left: 0px;
+    width: 100%;
+    height: 116%;
+    object-fit: contain;
+    max-width: 100%;
+    z-index:1;
+    /* transform: rotate(137.83deg); */
+}
+
+.king-img{ 
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    width: 35.9%;
+    height: auto;
+    object-fit: contain;
+    max-width: 35.9%;
+    transform: translateX(-50%);
+    z-index: 3;
+}
+
+.albert-img{ 
+    position: absolute;
+    bottom: 50%;
+    right: 17.7%;
+    width: 24%;
+    height: auto;
+    object-fit: contain;
+    max-width: 24%;
+    z-index: 2;
+}
+
+.steven-img {
+    position: absolute;
+    bottom: 50%;
+    left: 15.8%;
+    width: 27.3%;
+    height: auto;
+    object-fit: contain;
+    max-width: 27.3%;
+    z-index: 2;
+}
+
+.tereza-img{
+    position: absolute;
+    bottom: 50%;
+    right: 0%;
+    width: 21%;
+    height: auto;
+    object-fit: contain;
+    max-width: 21%;
+    z-index: 1;
+}
+
+.elon-img{ 
+    position: absolute;
+    bottom: 50%;
+    left: 0%;
+    width: 21%;
+    height: auto;
+    object-fit: contain;
+    max-width: 21%;
+    z-index: 1; 
+}
