@@ -9,6 +9,7 @@
     padding-right:  16px;
     align-items: center;
     -webkit-box-align: center;
+    z-index: 3;
 }
 
 .menu:hover{ 
@@ -51,6 +52,5 @@
     display: flex;
     justify-content: start;
     -webkit-box-align: center;
-    padding: auto;
-    padding-right: 32px;
+    padding-right: 16px ;
 }

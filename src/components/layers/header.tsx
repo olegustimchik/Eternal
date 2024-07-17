@@ -1,27 +1,29 @@
 import "@/assets/styles/layers/header.css";
-import EternalLoaderText   from "@public/EternalLoaderText.png";
-import MenuIcon            from "@public/MenuIcon.svg";
-import { RxCross2 }        from "react-icons/rx";
-import { FC, useState }    from "react";
+import EternalLoaderText                          from "@public/EternalLoaderText.png";
+import MenuIcon                                   from "@public/MenuIcon.svg";
+import { RxCross2 }                               from "react-icons/rx";
+import { FC, useState, Dispatch, SetStateAction } from "react";
 
-import { GetStarted }      from "../buttons/get-started";
-import { MiniEternalLogo } from "../logo/mini-logo";
-import { Menu }            from "../sections/menu";
+import { GetStarted }                             from "../buttons/get-started";
+import { MiniEternalLogo }                        from "../logo/mini-logo";
 
-export const Header: FC = () => {
-  const [isOpen, setOpen] = useState(false);
+type HeaderProps = {
+  isMenuOpen : boolean;
+  setMenuOpen: Dispatch<SetStateAction<boolean>>;
+};
 
+export const Header: FC<HeaderProps> = ({ isMenuOpen, setMenuOpen }) => {
   return (
     <>
       <div className="header">
         <div className="menu">
-          {!isOpen  &&
-          <div className="menu-button" onClick={() => setOpen(true)}>
+          {!isMenuOpen  &&
+          <div className="menu-button" onClick={() => setMenuOpen(true)}>
             <MenuIcon></MenuIcon>
           </div>}
-          {isOpen && <div className="exit-menu">
+          {isMenuOpen && <div className="exit-menu">
             <button className="exit-menu-button" onClick={() => {
-              setOpen(false);
+              setMenuOpen(false);
             }}>
               <RxCross2 color="#2F2535" size={"20px"}/>
             </button>
@@ -39,7 +41,6 @@ export const Header: FC = () => {
           <GetStarted></GetStarted>
         </div>
       </div>
-      {isOpen && <Menu isOpen={isOpen} setOpen={setOpen}/>}
     </>
   );
 };
