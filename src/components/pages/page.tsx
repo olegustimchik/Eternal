@@ -6,19 +6,20 @@ import { Header }                  from "../layers/header";
 import { Menu }                    from "../sections/menu";
 
 type PageProps = {
-  children: ReactNode;
+  children    : ReactNode;
+  renderFooter: boolean;
 };
-export const Page: FC<PageProps> = ({ children }) => {
+export const Page: FC<PageProps> = ({ children, renderFooter }) => {
   const [isMenuOpen, setMenuOpen] = useState<boolean>(false);
 
   return (
     <>
-      <Header isMenuOpen={isMenuOpen} setMenuOpen={setMenuOpen}></Header>
-      <div className="page-content">
-        <Menu isOpen={isMenuOpen} setClose={setMenuOpen}></Menu>
+      <Header isMenuOpen={false} setMenuOpen={setMenuOpen}></Header>
+      <div className="page-content" id="page-content">
+        {isMenuOpen && <Menu isOpen={isMenuOpen} setClose={setMenuOpen}></Menu>}
         {children}
       </div>
-      <Footer></Footer>
+      {renderFooter && <Footer></Footer>}
     </>
   );
 };

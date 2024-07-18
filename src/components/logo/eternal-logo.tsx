@@ -1,4 +1,4 @@
-import "@/assets/styles/logo.css";
+import "@/assets/styles/logo/logo.css";
 
 export const EternalLogo = () =>  {
   return (

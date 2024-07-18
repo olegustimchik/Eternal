@@ -14,7 +14,7 @@ import { Page }           from "./page";
 export function HomePage() {
   return (
     <>
-      <Page>
+      <Page renderFooter={true}>
         {/* <div style={ {
         height: "100px", width: "100px", position: "absolute", top: "200px", left: "200px",
       }}>

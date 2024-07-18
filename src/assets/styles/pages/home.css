@@ -6,7 +6,7 @@
     object-fit: contain;
     max-width: 100%;
     background: linear-gradient(rgba(17, 17, 21, 0) 0%, rgb(17, 17, 21) 100%);
-    z-index: 3;
+    z-index: -1;
 }
 
 .home-container{ 
@@ -107,7 +107,7 @@
     padding-top: 1px;
     padding-left: 1px;
     padding-bottom: 1px;
-    padding-right: 1px;
+    padding-right: 1px; 
 }
 
 .home-message-text-container{ 
@@ -119,6 +119,7 @@
     border-radius: 120px;
     padding: 8px 8px 8px 48px;
     background: linear-gradient(90.83deg, #08081E 11.84%, #21050C 111.32%);
+    z-index: 0;
 }
 
 .home-message-text{ 
@@ -161,12 +162,12 @@
     width: 100%;
     margin: 220px 30px 0px;
     border: 0px;
-    z-index: 1;
+    z-index: 0;
 }
 
 .conversation{ 
     position: absolute;
-    bottom: 22%;
+    bottom: 50%;
     left: 5%;
     width: 100%;
     height: 100%;
@@ -174,6 +175,7 @@
     object-fit: contain;
     max-width: 90%;
     margin-right: -2.8%;
+    z-index: -4;
 }
 
 .conversation img{ 
@@ -184,7 +186,7 @@
     height: 100%;
     object-fit: contain;
     max-width: 100%;
-    z-index: 1;
+    z-index: -4;
 }
 
 .home-page-back-image{ 
@@ -195,7 +197,7 @@
     height: 116%;
     object-fit: contain;
     max-width: 100%;
-    z-index:1;
+    z-index: -4;
     /* transform: rotate(137.83deg); */
 }
 
@@ -208,7 +210,7 @@
     object-fit: contain;
     max-width: 35.9%;
     transform: translateX(-50%);
-    z-index: 3;
+    z-index: -1;
 }
 
 .albert-img{ 
@@ -219,18 +221,18 @@
     height: auto;
     object-fit: contain;
     max-width: 24%;
-    z-index: 2;
+    z-index: -2;
 }
 
 .steven-img {
     position: absolute;
     bottom: 50%;
-    left: 15.8%;
+    left: 16%;
     width: 27.3%;
     height: auto;
     object-fit: contain;
     max-width: 27.3%;
-    z-index: 2;
+    z-index: -2;
 }
 
 .tereza-img{
@@ -241,7 +243,7 @@
     height: auto;
     object-fit: contain;
     max-width: 21%;
-    z-index: 1;
+    z-index: -3;
 }
 
 .elon-img{ 
@@ -252,7 +254,7 @@
     height: auto;
     object-fit: contain;
     max-width: 21%;
-    z-index: 1; 
+    z-index: -3; 
 }
 
 @media (max-width: 630px){ 
@@ -286,7 +288,7 @@
 .ellipse-02{ 
     position: absolute;
     bottom: 50%;
-    left: 50%;
+    left: 0;
     width: 58%;
     height: auto;
     object-fit: contain;
@@ -299,8 +301,8 @@
 
 .ellipse-01{ 
     position: absolute;
-    bottom: 50%;
-    left: 0;
+    bottom: 55%;
+    right: 0;
     width: 58%;
     height: auto;
     object-fit: contain;
@@ -308,5 +310,5 @@
     transform: translateX(-50%);
     opacity: 0.4;
     rotate: -137.83deg;
-    z-index: 2;
+    z-index: 1;
 }

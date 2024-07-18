@@ -1,0 +1,31 @@
+
+.eternal-animation-container{ 
+    display: flex;
+    justify-content: left;
+    width: 30px;
+    height: 30px;
+    margin-right: 1rem;
+}
+
+.eternal-container { 
+    display: inline-flex;
+    position: relative;
+    padding: 1rem;
+    justify-content: center 
+}
+
+.eternal-container:hover{
+    cursor: pointer; 
+}
+
+.eternal-text-img{
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    margin-left: 2rem;
+}
+
+.eternal-text-img img{
+    height: 0.6rem;
+    width: 9.3rem;
+}

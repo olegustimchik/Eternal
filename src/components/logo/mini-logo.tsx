@@ -1,4 +1,4 @@
-import "@/assets/styles/mini-logo.css";
+import "@/assets/styles/logo/mini-logo.css";
 
 export const MiniEternalLogo = () =>  {
   return (
